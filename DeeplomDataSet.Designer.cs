@@ -847,10 +847,10 @@ namespace WPFUIKitProfessional {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public OrderRow AddOrderRow(int ID_order, EmployeeRow parentEmployeeRowByFK_Order_Сотрудники, string Name, int Amount) {
+            public OrderRow AddOrderRow(EmployeeRow parentEmployeeRowByFK_Order_Сотрудники, string Name, int Amount) {
                 OrderRow rowOrderRow = ((OrderRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        ID_order,
+                        null,
                         null,
                         Name,
                         Amount};
@@ -905,6 +905,8 @@ namespace WPFUIKitProfessional {
                 base.Columns.Add(this.columnAmount);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnID_order}, true));
+                this.columnID_order.AutoIncrement = true;
+                this.columnID_order.AutoIncrementSeed = 1;
                 this.columnID_order.AllowDBNull = false;
                 this.columnID_order.Unique = true;
                 this.columnName.MaxLength = 50;
@@ -1191,10 +1193,10 @@ namespace WPFUIKitProfessional {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public НаличиеОборудованияRow AddНаличиеОборудованияRow(int ID_equipment, EmployeeRow parentEmployeeRowByFK_НаличиеОборудования_Сотрудники, string Name, string Inventory_number, System.DateTime Date_receiving, System.DateTime Date_of_debiting, string Place, System.DateTime Date_of_commissioning) {
+            public НаличиеОборудованияRow AddНаличиеОборудованияRow(EmployeeRow parentEmployeeRowByFK_НаличиеОборудования_Сотрудники, string Name, string Inventory_number, System.DateTime Date_receiving, System.DateTime Date_of_debiting, string Place, System.DateTime Date_of_commissioning) {
                 НаличиеОборудованияRow rowНаличиеОборудованияRow = ((НаличиеОборудованияRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        ID_equipment,
+                        null,
                         null,
                         Name,
                         Inventory_number,
@@ -1265,6 +1267,8 @@ namespace WPFUIKitProfessional {
                 base.Columns.Add(this.columnDate_of_commissioning);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnID_equipment}, true));
+                this.columnID_equipment.AutoIncrement = true;
+                this.columnID_equipment.AutoIncrementSeed = 1;
                 this.columnID_equipment.AllowDBNull = false;
                 this.columnID_equipment.Unique = true;
                 this.columnName.MaxLength = 50;
@@ -1533,10 +1537,10 @@ namespace WPFUIKitProfessional {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public ПрограммноеОбеспечениеRow AddПрограммноеОбеспечениеRow(int ID_Software, string Name, string License_key, System.DateTime Date_of_receving, EmployeeRow parentEmployeeRowByFK_ПрограммноеОбеспечение_Сотрудники, System.DateTime Date_of_installing) {
+            public ПрограммноеОбеспечениеRow AddПрограммноеОбеспечениеRow(string Name, string License_key, System.DateTime Date_of_receving, EmployeeRow parentEmployeeRowByFK_ПрограммноеОбеспечение_Сотрудники, System.DateTime Date_of_installing) {
                 ПрограммноеОбеспечениеRow rowПрограммноеОбеспечениеRow = ((ПрограммноеОбеспечениеRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        ID_Software,
+                        null,
                         Name,
                         License_key,
                         Date_of_receving,
@@ -1599,6 +1603,8 @@ namespace WPFUIKitProfessional {
                 base.Columns.Add(this.columnDate_of_installing);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnID_Software}, true));
+                this.columnID_Software.AutoIncrement = true;
+                this.columnID_Software.AutoIncrementSeed = 1;
                 this.columnID_Software.AllowDBNull = false;
                 this.columnID_Software.Unique = true;
                 this.columnName.MaxLength = 255;
